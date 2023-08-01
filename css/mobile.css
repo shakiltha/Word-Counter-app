@@ -1,0 +1,165 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+    }
+  
+    body {
+      width: 100vw;
+      height: 100%;
+      overflow-x: hidden;
+    }
+  
+    .main-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(23, 4, 53);
+      position: relative;
+    }
+
+    .dummy-text {
+        padding: 10px;
+        margin: 10px;
+      }
+      
+      .dummy-text h3 {
+        padding: 5px;
+        margin: 5px;
+        color: rgb(253, 191, 244);
+      }
+  
+    .textField {
+      width: 400px;
+      height: 300px;
+      padding: 5px;
+      margin: 0.5rem;
+      border: 2px solid;
+      border-radius: 5px;
+      display: grid;
+      place-items: center;
+    }
+  
+    #inputText {
+      width: 350px;
+      height: 200px;
+      padding: 5px;
+      font-size: 0.8rem;
+      resize: none;
+    }
+  
+    .output-area {
+      width: 80%;
+      text-align: center;
+    }
+  
+    .word-count,
+    .letter-count,
+    .symbol-count,
+    .number-count,
+    .space-count {
+      padding: 5px;
+      margin: 5px;
+      font-size: 1rem;
+      color: rgb(253, 191, 244);
+    }
+  
+    .total-word,
+    .total-letter,
+    .total-symbol,
+    .total-number,
+    .total-space {
+      padding: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  
+    .individual-letter-count-btn,
+    .individual-number-count-btn {
+      padding: 5px;
+      margin: 5px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+  
+    .individual-letter-count-btn:hover {
+      background-color: blue;
+      color: #fff;
+      transition: 0.5s;
+    }
+
+    .individual-number-count-btn:hover {
+      background-color: blue;
+      color: #fff;
+      transition: 0.5s;
+    }
+  
+    #letter-modal,
+    #number-modal {
+      height: 80%;
+      width: 80%;
+      text-align: center;
+      padding: 5px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+    }
+  
+    .individual-letter-container,
+    .individual-number-container {
+      display: grid;
+      grid-template-columns: repeat(4, 100px);
+      grid-template-rows: repeat(8, 20px);
+      grid-gap: 5px;
+      padding: 5px;
+      margin: 5px;
+      justify-content: center;
+    }
+  
+    h2 {
+      padding: 0.5rem;
+    }
+  
+    .individual-letter-container p {
+      font-size: 1rem;
+    }
+
+    .individual-number-container p {
+      font-size: 1rem;
+    }
+  
+    .individual-letter-container p span {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .individual-number-container p span {
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  
+    .close-dialog-btn {
+      padding: 8px;
+      margin: 5px;
+      font-size: 1rem;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      background-color: blue;
+      color: #fff;
+    }
+  
+    .close-dialog-btn:hover {
+      background-color: rgb(161, 88, 5);
+      color: #fff;
+      transition: 0.5s;
+    }

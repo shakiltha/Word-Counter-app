@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(71, 16, 46);
+  overflow-x: hidden;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.dummy-text {
+  padding: 10px;
+  margin: 10px;
+}
+
+.dummy-text h3 {
+  padding: 5px;
+  margin: 5px;
+  color: rgb(255, 255, 255);
+}
+
+#dummy {
+  width: 400px;
+  height: 250px;
+  padding: 10px;
+  font-size: 1.2rem;
+  resize: none;
+}
+.textField {
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+  margin: 1rem;
+  border: 2px solid;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+}
+
+#inputText {
+  width: 400px;
+  height: 250px;
+  padding: 10px;
+  font-size: 1.2rem;
+  resize: none;
+}
+
+.resetBtn {
+  padding: 5px;
+  margin: 5px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.resetBtn:hover {
+  background-color: blue;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.output-area {
+  width: 80%;
+  text-align: center;
+}
+
+.word-count,
+.letter-count,
+.symbol-count,
+.number-count,
+.space-count {
+  padding: 5px;
+  margin: 5px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.total-word,
+.total-letter,
+.total-symbol
+.total-number,
+.total-space {
+  padding: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.individual-letter-count-btn,
+.individual-number-count-btn {
+  padding: 5px;
+  margin: 5px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.individual-letter-count-btn:hover {
+  background-color: blue;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.individual-number-count-btn:hover {
+  background-color: blue;
+  color: #fff;
+  transition: 0.5s;
+}
+
+#letter-modal,
+#number-modal {
+  height: 80%;
+  width: 80%;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.individual-letter-container,
+.individual-number-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(8, 20px);
+  grid-gap: 10px;
+  padding: 10px;
+  margin: 5px;
+  justify-content: center;
+}
+
+h2 {
+  padding: 1rem;
+}
+
+.individual-letter-container p {
+  font-size: 1.2rem;
+}
+
+.individual-number-container p {
+  font-size: 1.2rem;
+}
+
+.individual-letter-container p span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.individual-number-container p span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.close-dialog-btn {
+  padding: 8px;
+  margin: 5px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: blue;
+  color: #fff;
+}
+
+.close-dialog-btn:hover {
+  background-color: rgb(161, 88, 5);
+  color: #fff;
+  transition: 0.5s;
+}

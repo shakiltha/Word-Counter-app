@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 600px)">
+    <title>Simple Word Counter app</title>
+  </head>
+  <body>
+    <!-- main wrapper, containing all necessary elements -->
+    <div class="main-wrapper">
+      <!-- ready made texts to copy and input text field -->
+      <!-- copy the texts -->
+      <div class="dummy-text">
+        <h3>copy the following text by doubleclick</h3>
+        <textarea id="dummy" readonly></textarea>
+      </div>
+
+      <!-- paste it here to this input text field, or write your own -->
+      <div class="textField">
+        <textarea
+          id="inputText"
+          placeholder="Paste or write your own...."
+        ></textarea>
+        <button class="resetBtn">reset</button>
+      </div>
+
+      <!-- output area -->
+      <div class="output-area">
+        <!-- total word -->
+        <p class="word-count">Word: <span class="total-word">0</span></p>
+      
+        <!-- total letter -->
+        <p class="letter-count">
+          Letter: <span class="total-letter">0</span>
+        </p>
+        <!-- individual letter instance -->
+        <button class="individual-letter-count-btn">more</button>
+
+        <!-- total symbol -->
+        <p class="symbol-count">Symbol: <span class="total-symbol">0</span></p>
+
+        <!-- total number -->
+        <p class="number-count">Number: <span class="total-number">0</span></p>
+        <!-- individual number instance -->
+        <button class="individual-number-count-btn">more</button>
+
+        <!-- total space -->
+        <p class="space-count">Space: <span class="total-space">0</span></p>
+      </div>
+
+      <!-- modal box for individual letter count -->
+      <dialog id="letter-modal">
+        <h2>Individual letter instances</h2>
+        <div class="individual-letter-container">
+          <p>A: <span class="total-a">0</span></p>
+          <p>B: <span class="total-b">0</span></p>
+          <p>C: <span class="total-c">0</span></p>
+          <p>D: <span class="total-d">0</span></p>
+          <p>E: <span class="total-e">0</span></p>
+          <p>F: <span class="total-f">0</span></p>
+          <p>G: <span class="total-g">0</span></p>
+          <p>H: <span class="total-h">0</span></p>
+          <p>I: <span class="total-i">0</span></p>
+          <p>J: <span class="total-j">0</span></p>
+          <p>K: <span class="total-k">0</span></p>
+          <p>L: <span class="total-l">0</span></p>
+          <p>M: <span class="total-m">0</span></p>
+          <p>N: <span class="total-n">0</span></p>
+          <p>O: <span class="total-o">0</span></p>
+          <p>P: <span class="total-p">0</span></p>
+          <p>Q: <span class="total-q">0</span></p>
+          <p>R: <span class="total-r">0</span></p>
+          <p>S: <span class="total-s">0</span></p>
+          <p>T: <span class="total-t">0</span></p>
+          <p>U: <span class="total-u">0</span></p>
+          <p>V: <span class="total-v">0</span></p>
+          <p>W: <span class="total-w">0</span></p>
+          <p>X: <span class="total-x">0</span></p>
+          <p>Y: <span class="total-y">0</span></p>
+          <p>Z: <span class="total-z">0</span></p>
+        </div>
+        <button class="close-dialog-btn">close dialog</button>
+      </dialog>
+
+      <!-- modal box for individual number count -->
+      <dialog id="number-modal">
+        <h2>Individual Number instances</h2>
+        <div class="individual-number-container">
+          <p>0: <span class="total-zero">0</span></p>
+          <p>1: <span class="total-one">0</span></p>
+          <p>2: <span class="total-two">0</span></p>
+          <p>3: <span class="total-three">0</span></p>
+          <p>4: <span class="total-four">0</span></p>
+          <p>5: <span class="total-five">0</span></p>
+          <p>6: <span class="total-six">0</span></p>
+          <p>7: <span class="total-seven">0</span></p>
+          <p>8: <span class="total-eight">0</span></p>
+          <p>9: <span class="total-nine">0</span></p>
+        </div>
+        <button class="close-dialog-btn">close dialog</button>
+      </dialog>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

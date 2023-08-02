@@ -8,3 +8,5 @@ Though it says that it is a **word** counter app. Actually I didn't only counted
 4. if you want to see how many times a letter occurred, you can click on the more button after letter counter.
 5. if you want to see how many times a number occurred, you can click on the more button after number counter.
 6. this is also **mobile responsive**
+
+here is the live demo: [word counter]( https://aquamarine-crostata-188de1.netlify.app/)
